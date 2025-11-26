@@ -25,16 +25,16 @@ namespace CarLotSimulator
 
         public Car()
         {
-             
+            CarLot.numberOfCars++; 
         }
-
         public Car(string carMake, string carModel, int carYear, bool carIsDrivable)
         {
             Make = carMake;
             Model = carModel;
             Year = carYear;
             IsDrivable = carIsDrivable;
+            
+            CarLot.numberOfCars++;
         }
-
     }
 }

@@ -29,6 +29,7 @@ namespace CarLotSimulator
             CarOne.MakeHonkNoise("Honk"); 
             
             carLot.ParkingLot.Add(CarOne);
+            Console.WriteLine($"Number of cars in the lot: {CarLot.numberOfCars}");
             
             var CarTwo = new Car()
             {
@@ -40,14 +41,16 @@ namespace CarLotSimulator
 
             CarTwo.MakeEngineNoise("rattle-rattle"); 
             CarTwo.MakeHonkNoise("Beep");
-            
+
             carLot.ParkingLot.Add(CarTwo);
+            Console.WriteLine($"Number of cars in the lot: {CarLot.numberOfCars}"); 
 
             var CarThree = new Car("Lexus", "RZ", 2025, true);
             
             CarThree.MakeEngineNoise("Swoosh");
 
             carLot.ParkingLot.Add(CarThree);
+            Console.WriteLine($"Number of cars in the lot: {CarLot.numberOfCars}");
             
 
 
